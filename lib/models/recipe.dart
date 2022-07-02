@@ -12,31 +12,30 @@ class Recipe {
   List<String> ingredients;
   List<String> steps;
 
-  Recipe({
-    required this.name,
-    required this.thumbnail,
-    required this.servings,
-    required this.times,
-    required this.difficulty,
-    required this.author,
-    required this.datePublished,
-    required this.description,
-    required this.ingredients,
-    required this.steps});
+  Recipe(
+      {required this.name,
+      required this.thumbnail,
+      required this.servings,
+      required this.times,
+      required this.difficulty,
+      required this.author,
+      required this.datePublished,
+      required this.description,
+      required this.ingredients,
+      required this.steps});
 }
 
 List<Recipe> recipes = [
   Recipe(
     name: 'Seblak Ceker',
-    thumbnail:
-    'https://www.masakapahariini.com/wp-content/uploads/2019/03/seblak-ceker-620x440.jpg',
+    thumbnail: 'seblak-ceker.jpg',
     servings: '4 Porsi',
     times: '10mnt',
     difficulty: 'Mudah',
     author: 'Dilla',
     datePublished: 'Februari 22, 2019',
     description:
-    'Seblak Ceker adalah fenomena di masa kini yang datang dari Jawa Barat. Seblak sendiri hadir dalam berbagai variasinya dan satu versi yang menggunakan ceker ini bisa jadi satu resep yang akan kamu favoritkan berikutnya. Simak di sini untuk cara membuatnya ya, gaes!Langkah pertama yang kamu perlu lakukan adalah memilih ceker ayam berkualitas dan rebus hingga matang dan empuk. Di wajan terpisah, tumis bumbu halus, tambahkan telur, lalu kemudian masukkan ceker dan kerupuk. Tambahkan sayur dan air rebusan ceker tadi. Bubuhkan Bango Kecap Manis dan selesai sudah proses memasaknya. Sedikit tips dariku, tambahkan kencur pada bumbu halus untuk rasa yang lebih seru!Ingin tahu cara bikin seblak lainnya dari bagian resep di Masak Apa Hari Ini? Simak resep Seblak Basah, Seblak Belacan, Seblak Mie Goreng, serta 5 cara lainnya dan juga Ceker Pedas untuk dipersembahkan pada keluarga tercinta!',
+        'Seblak Ceker adalah fenomena di masa kini yang datang dari Jawa Barat. Seblak sendiri hadir dalam berbagai variasinya dan satu versi yang menggunakan ceker ini bisa jadi satu resep yang akan kamu favoritkan berikutnya. Simak di sini untuk cara membuatnya ya, gaes!Langkah pertama yang kamu perlu lakukan adalah memilih ceker ayam berkualitas dan rebus hingga matang dan empuk. Di wajan terpisah, tumis bumbu halus, tambahkan telur, lalu kemudian masukkan ceker dan kerupuk. Tambahkan sayur dan air rebusan ceker tadi. Bubuhkan Bango Kecap Manis dan selesai sudah proses memasaknya. Sedikit tips dariku, tambahkan kencur pada bumbu halus untuk rasa yang lebih seru!Ingin tahu cara bikin seblak lainnya dari bagian resep di Masak Apa Hari Ini? Simak resep Seblak Basah, Seblak Belacan, Seblak Mie Goreng, serta 5 cara lainnya dan juga Ceker Pedas untuk dipersembahkan pada keluarga tercinta!',
     ingredients: [
       '300 g ceker ayam',
       '1 L air',
@@ -64,15 +63,14 @@ List<Recipe> recipes = [
   ),
   Recipe(
     name: 'Jus Buah Jeruk Jelly Susu',
-    thumbnail:
-    'https://www.masakapahariini.com/wp-content/uploads/2022/04/resep-jus-buah-jeruk-jelly-sus-780x440.jpg',
+    thumbnail: 'jus-buah-jeruk-jelly-susu.jpg',
     servings: '4 Porsi',
     times: '30mnt',
     difficulty: 'Mudah',
     author: 'Rian Farisa',
     datePublished: 'April 12, 2022',
     description:
-    'Minuman apa, ya, yang akan menyegarkan tubuh sepulang ibadah shalat tarawih dari masjid? Nah, jus buah jeruk dengan jelly dan susu yang satu ini adalah jurus pamungkasnya! Kehadiran jelly yang mudah untuk dibuat ini menambahkan sensasi kesegaran dan tekstur kenyal yang menyenangkan. Kemudian ada juga kehadiran susu yang menjadikannya creamy dan memanjakan. Wah, bagaimana cara membuatnya, ya?Praktis dan mudah untuk dibuat adalah jawabannya! Untuk resep jus buah ini, masak dulu jelly bubuk dengan Buavita Orange hingga larut dan tuangkan ke dalam wadah tahan panas. Setelah mengeras, potong kotak-kotak kecil dan jadikan sebagai topping Buavita Orange di wadah terpisah yang sudah dipadukan dengan susu. Tambahkan es batu dan sajikan segar sebagai menu selepas tarawih. Seru, bukan?Bicara soal jus buah jeruk, minuman ini memang mudah dikreasikan dengan banyak bahan. Di antara yang populer misalnya adalah jus jeruk wortel atau jus jeruk tropis dengan buah nanas dan pepaya. Atau mungkin kamu juga sudah familiar yang satu ini? Jus jeruk yang dipadukan dengan daging kelapa yang disisir. Disajikan dalam batok kelapa menjadikannya menu paling populer di restoran makanan Sunda ataupun seafood. Kemudian terbayang kreasi minuman segar ini dengan beragam topping. Misalnya saja jus buah jeruk dengan topping berupa jelly seperti dalam resep ini. Serta ada juga dengan topping selasih yang renyah. Pernahkah kamu berkreasi dengan padanan yang lain?Bicara soal sisi nutrisinya, vitamin C dari Buavita Orange diperkaya lagi kandungan vitamin A, B1, B2, B3, dan B6. Asupan ini akan membantu tubuh tetap segar sepanjang hari, terlebih lagi di bulan Ramadan. Rasanya yang menyegarkan akan membantu kamu terhidrasi kembali!Selain untuk menu sepulang tarawih, minuman ini juga pas dinikmati sebagai pendamping takjil ataupun makanan berbuka yang lezat. Jangan lupa untuk membuatkan ekstra banyak agar seisi rumah kebagian menikmatinya, ya!Pastikan juga untuk follow, like, dan jika ada pertanyaan atau ingin request resep, kamu bisa langsung bertanya di kolom komentar akun Instagram Masak Apa Hari Ini. Selamat memasak!',
+        'Minuman apa, ya, yang akan menyegarkan tubuh sepulang ibadah shalat tarawih dari masjid? Nah, jus buah jeruk dengan jelly dan susu yang satu ini adalah jurus pamungkasnya! Kehadiran jelly yang mudah untuk dibuat ini menambahkan sensasi kesegaran dan tekstur kenyal yang menyenangkan. Kemudian ada juga kehadiran susu yang menjadikannya creamy dan memanjakan. Wah, bagaimana cara membuatnya, ya?Praktis dan mudah untuk dibuat adalah jawabannya! Untuk resep jus buah ini, masak dulu jelly bubuk dengan Buavita Orange hingga larut dan tuangkan ke dalam wadah tahan panas. Setelah mengeras, potong kotak-kotak kecil dan jadikan sebagai topping Buavita Orange di wadah terpisah yang sudah dipadukan dengan susu. Tambahkan es batu dan sajikan segar sebagai menu selepas tarawih. Seru, bukan?Bicara soal jus buah jeruk, minuman ini memang mudah dikreasikan dengan banyak bahan. Di antara yang populer misalnya adalah jus jeruk wortel atau jus jeruk tropis dengan buah nanas dan pepaya. Atau mungkin kamu juga sudah familiar yang satu ini? Jus jeruk yang dipadukan dengan daging kelapa yang disisir. Disajikan dalam batok kelapa menjadikannya menu paling populer di restoran makanan Sunda ataupun seafood. Kemudian terbayang kreasi minuman segar ini dengan beragam topping. Misalnya saja jus buah jeruk dengan topping berupa jelly seperti dalam resep ini. Serta ada juga dengan topping selasih yang renyah. Pernahkah kamu berkreasi dengan padanan yang lain?Bicara soal sisi nutrisinya, vitamin C dari Buavita Orange diperkaya lagi kandungan vitamin A, B1, B2, B3, dan B6. Asupan ini akan membantu tubuh tetap segar sepanjang hari, terlebih lagi di bulan Ramadan. Rasanya yang menyegarkan akan membantu kamu terhidrasi kembali!Selain untuk menu sepulang tarawih, minuman ini juga pas dinikmati sebagai pendamping takjil ataupun makanan berbuka yang lezat. Jangan lupa untuk membuatkan ekstra banyak agar seisi rumah kebagian menikmatinya, ya!Pastikan juga untuk follow, like, dan jika ada pertanyaan atau ingin request resep, kamu bisa langsung bertanya di kolom komentar akun Instagram Masak Apa Hari Ini. Selamat memasak!',
     ingredients: [
       '700 ml Buavita Orange',
       '300 ml susu cair',
@@ -89,15 +87,14 @@ List<Recipe> recipes = [
   ),
   Recipe(
     name: 'Iga Bakar Kecap Madu',
-    thumbnail:
-    'https://www.masakapahariini.com/wp-content/uploads/2019/10/shutterstock_1305973879-780x440.jpg',
+    thumbnail: 'iga-bakar-kecap-madu.jpg',
     servings: '4 Porsi',
     times: '30mnt',
     difficulty: 'Cukup rumit',
     author: 'Chef Panji',
     datePublished: 'November 1, 2019',
     description:
-    'Pencinta iga bakar kecap kini tidak perlu kuatir lagi dengan resep yang itu-itu lagi. Kali ini Chef akan membagikan cara agar iga bakar kecap semakin lezat dan tersaji dengan kuah kari yang spesial. Segera ikuti Chef ke dapur, yuk!Kuncian pertama yang akan menjadikan iga semakin lezat adalah campuran oles Bango Kecap Manis dan madu. Jangan lupa biarkan termarinasi selama setidaknya setengah jam untuk hasil lebih maksimal. Mengapa pada tahap ini Chef tidak menyarankan penambahan garam dan merica? Ini dikarenakan iga sapi akan kesulitan menyerap bumbu marinasi dan iga akan menjadi kering saat dipanggang. Setelah dipanggang nanti, masukkan juga ke dalam oven dan bakar selama 30 menit pada suhu 200C agar matang sempurna. Jangan lupa di awal untuk memilih iga yang berkualitas, ya!Selebihnya kamu hanya perlu membuat kuah kari yang lezat sebagai pendampingnya. Sajikan juga menu-menu lainnya seperti ayam tuturuga ataupun soto tangkar. ',
+        'Pencinta iga bakar kecap kini tidak perlu kuatir lagi dengan resep yang itu-itu lagi. Kali ini Chef akan membagikan cara agar iga bakar kecap semakin lezat dan tersaji dengan kuah kari yang spesial. Segera ikuti Chef ke dapur, yuk!Kuncian pertama yang akan menjadikan iga semakin lezat adalah campuran oles Bango Kecap Manis dan madu. Jangan lupa biarkan termarinasi selama setidaknya setengah jam untuk hasil lebih maksimal. Mengapa pada tahap ini Chef tidak menyarankan penambahan garam dan merica? Ini dikarenakan iga sapi akan kesulitan menyerap bumbu marinasi dan iga akan menjadi kering saat dipanggang. Setelah dipanggang nanti, masukkan juga ke dalam oven dan bakar selama 30 menit pada suhu 200C agar matang sempurna. Jangan lupa di awal untuk memilih iga yang berkualitas, ya!Selebihnya kamu hanya perlu membuat kuah kari yang lezat sebagai pendampingnya. Sajikan juga menu-menu lainnya seperti ayam tuturuga ataupun soto tangkar. ',
     ingredients: [
       '1 kg iga sapi',
       '1 buah jeruk nipis',
@@ -128,15 +125,14 @@ List<Recipe> recipes = [
   ),
   Recipe(
     name: 'Semur Daging Sengkel Khas Wonogiri',
-    thumbnail:
-    'https://www.masakapahariini.com/wp-content/uploads/2019/06/semur-daging-sengkel-667x440.jpg',
+    thumbnail: 'semur-daging-sengkel.jpg',
     servings: '4 Porsi',
     times: '1jam',
     difficulty: 'Mudah',
     author: 'Wina',
     datePublished: 'Desember 22, 2019',
     description:
-    'Kembali berbagi variasi resep semur lainnya dan kali ini datang dari Wonogiri. Semur daging sengkel ini semakin istimewa karena kehadiran santan yang menjadikannya semakin lezat!Kalau sudah bosan dengan semur daging kentang yang biasanya ataupun semur ati ayam, maka cobalah membuat semur dengan protein lainnya. Daging sengkel berasal dari bagian kaki dan lazimnya digunakan untuk masakan dengan proses yang membutuhkan waktu. Membuat semur menjadi pilihan tepat karena kita bisa memasak daging agak lama dan bumbu dapat meresap sempurna. Tambahkan santan sebagai khas Wonogiri agar memiliki cita rasa yang khas!Sudah siap memasak resep ini? Pastikan dulu untuk berbelanja berbagai kebutuhannya terlebih dahulu, ya!',
+        'Kembali berbagi variasi resep semur lainnya dan kali ini datang dari Wonogiri. Semur daging sengkel ini semakin istimewa karena kehadiran santan yang menjadikannya semakin lezat!Kalau sudah bosan dengan semur daging kentang yang biasanya ataupun semur ati ayam, maka cobalah membuat semur dengan protein lainnya. Daging sengkel berasal dari bagian kaki dan lazimnya digunakan untuk masakan dengan proses yang membutuhkan waktu. Membuat semur menjadi pilihan tepat karena kita bisa memasak daging agak lama dan bumbu dapat meresap sempurna. Tambahkan santan sebagai khas Wonogiri agar memiliki cita rasa yang khas!Sudah siap memasak resep ini? Pastikan dulu untuk berbelanja berbagai kebutuhannya terlebih dahulu, ya!',
     ingredients: [
       '500 g daging sapi sengkel, potong-potong',
       '2 lembar daun salam',
@@ -161,17 +157,15 @@ List<Recipe> recipes = [
     ],
   ),
   Recipe(
-    name:
-    'Ketan Srikaya Gula Merah',
-    thumbnail:
-    'https://www.masakapahariini.com/wp-content/uploads/2021/05/shutterstock_1921296590-780x440.jpg',
+    name: 'Ketan Srikaya Gula Merah',
+    thumbnail: 'ketan-srikaya-gula-merah.jpg',
     servings: '8 Porsi',
     times: '30mnt',
     difficulty: 'Cukup rumit',
     author: 'Wina',
     datePublished: 'Mei 13, 2021',
     description:
-    'Lezatnya jajanan tradisional membuat siapapun yang mencicipinya ketagihan. Dari Sabang sampai Merauke, Indonesia punya aneka jajanan tradisional yang unik di tiap daerahnya. Jika kamu adalah seorang foodies, tentu sudah familiar dong dengan jajanan harum nan legit bernama ketan srikaya gula merah ini?Berasal dari Padang, kue tradisional ini digadang-gadang menjadi kebanggaan orang Minang. Rasanya yang manis dan gurih, teksturnya yang lembut dan meleleh di mulut membuatnya menjadi primadona para turis dan penduduk asli sana. Ketan srikaya ini terbuat dari campuran beras ketan putih yang kemudian dimasak bersama santan, garam, dan daun pandan. Yang membuatnya beda dari sajian ketan biasanya adalah kehadiran gula merah yang kental dan legit dengan tambahan rasa spesial dari SariWangi Milk Tea Teh Tarik. Dijamin membuat tiap gigitan lezat dan mengenyangkan. Bagi kamu yang belum pernah membuat ketan srikaya di rumah, tenang saja karena caranya mudah dan bahannya pun tak sulit untuk ditemukan. Penasaran untuk menghadirkan jajanan spesial ini di meja makan keluarga? Yuk, langsung saja kita simak resepnya!Untuk sajian tradisional Indonesia yang lain, nikmati juga kue pukis green tea, lumpia basah Bandung, dan sate telur gulung jadul.',
+        'Lezatnya jajanan tradisional membuat siapapun yang mencicipinya ketagihan. Dari Sabang sampai Merauke, Indonesia punya aneka jajanan tradisional yang unik di tiap daerahnya. Jika kamu adalah seorang foodies, tentu sudah familiar dong dengan jajanan harum nan legit bernama ketan srikaya gula merah ini?Berasal dari Padang, kue tradisional ini digadang-gadang menjadi kebanggaan orang Minang. Rasanya yang manis dan gurih, teksturnya yang lembut dan meleleh di mulut membuatnya menjadi primadona para turis dan penduduk asli sana. Ketan srikaya ini terbuat dari campuran beras ketan putih yang kemudian dimasak bersama santan, garam, dan daun pandan. Yang membuatnya beda dari sajian ketan biasanya adalah kehadiran gula merah yang kental dan legit dengan tambahan rasa spesial dari SariWangi Milk Tea Teh Tarik. Dijamin membuat tiap gigitan lezat dan mengenyangkan. Bagi kamu yang belum pernah membuat ketan srikaya di rumah, tenang saja karena caranya mudah dan bahannya pun tak sulit untuk ditemukan. Penasaran untuk menghadirkan jajanan spesial ini di meja makan keluarga? Yuk, langsung saja kita simak resepnya!Untuk sajian tradisional Indonesia yang lain, nikmati juga kue pukis green tea, lumpia basah Bandung, dan sate telur gulung jadul.',
     ingredients: [
       '400 g beras ketan putih, rendam selama 2 jam',
       '200 ml santan kental',
@@ -197,17 +191,15 @@ List<Recipe> recipes = [
     ],
   ),
   Recipe(
-    name:
-    'Rendang Bola-Bola Kambing Padang',
-    thumbnail:
-    'https://www.masakapahariini.com/wp-content/uploads/2018/08/rendang-bola-bola-kambing-padang-e1555308708608-780x440.jpg',
+    name: 'Rendang Bola-Bola Kambing Padang',
+    thumbnail: 'rendang-bola-bola-kambing-padang.jpg',
     servings: '4 Porsi',
     times: '1jam',
     difficulty: 'Mudah',
     author: 'Tim MAHI',
     datePublished: 'Agustus 29, 2018',
     description:
-    'Rendang bola-bola kambing Padang? Satu variasi menggiurkan yang terinspirasi resep tradisional khas Minang dan cocok untuk suasana Idul Adha. Di kala daging kambing masih banyak tersedia dimana-mana, resep rendang jenis ini wajib hukumnya untuk dicoba!Variasi masakan kambing mungkin tidak sekaya ayam ataupun daging lainnya, meskipun ini di Indonesia. Daging kambing sudah terkenal kelezatannya namun masih dirasa oleh banyak orang sebagai protein yang sulit untuk dimasak. Padahal tidak begitu sebetulnya. Melalui resep ini, sebetulnya kita akan menyadari kalau daging kambing itu tidak hanya sedap namun juga fleksibel dimasak dengan cara apapun.Berbekal legitnya Bango Kecap Manis, resep rendang bola-bola kambing Padang ini begitu tepat ditemani dengan sajian telur dadar Padang ataupun banyak protein dan sayur khas masakan Minang. Jadi tunggu apa lagi? Ayo kita masak bersama!',
+        'Rendang bola-bola kambing Padang? Satu variasi menggiurkan yang terinspirasi resep tradisional khas Minang dan cocok untuk suasana Idul Adha. Di kala daging kambing masih banyak tersedia dimana-mana, resep rendang jenis ini wajib hukumnya untuk dicoba!Variasi masakan kambing mungkin tidak sekaya ayam ataupun daging lainnya, meskipun ini di Indonesia. Daging kambing sudah terkenal kelezatannya namun masih dirasa oleh banyak orang sebagai protein yang sulit untuk dimasak. Padahal tidak begitu sebetulnya. Melalui resep ini, sebetulnya kita akan menyadari kalau daging kambing itu tidak hanya sedap namun juga fleksibel dimasak dengan cara apapun.Berbekal legitnya Bango Kecap Manis, resep rendang bola-bola kambing Padang ini begitu tepat ditemani dengan sajian telur dadar Padang ataupun banyak protein dan sayur khas masakan Minang. Jadi tunggu apa lagi? Ayo kita masak bersama!',
     ingredients: [
       '400 g daging kambing giling',
       '2 cm lengkuas, memarkan',
@@ -236,16 +228,16 @@ List<Recipe> recipes = [
     ],
   ),
   Recipe(
-    name: 'Mie Koclok',
+    name: 'Mie Koclok Cirebon',
     thumbnail:
-    'https://www.masakapahariini.com/wp-content/uploads/2019/02/mie-koclok-cirebon-780x440.jpg',
+        'mie-koclok-cirebon.jpg',
     servings: '3 Porsi',
     times: '30mnt',
     difficulty: 'Cukup rumit',
     author: 'Chef Panji',
     datePublished: 'Februari 9, 2019',
     description:
-    'Mie Koclok mungkin hanya satu dari sedemikian banyak masakan khas kota Cirebon. Namun uniknya, Mie Koclok memiliki kemiripan tersendiri Mie Celor meskipun berbeda pulau dengan yang satu itu. Dengan segala kelebihannya ini, hidangan ini wajib kita coba dan masak sendiri di rumah, terkhusus bagi yang belum pernah mencoba sebelumnya.Walaupun masih kalah pamor dibandingkan Tahu Gejrot ataupun Nasi Jamblang, Mie Koclok memiliki cita rasa yang sangat komplit. Berbekal kaldu ayam dan santan kental yang lekoh rasanya, mie basah dimasak bersama sayuran dan tersaji bersama suwiran ayam serta telur rebus. Membayangkannya saja sungguh nikmat, apalagi saat kita menyantapnya!Tertarik dengan berbagai menu khas Cirebon lainnya? Simak resep-resep dari saya di Masak Apa Hari Ini seperti Nasi Lengko serta Empal Gentong. Yuk, kita memasak bersama hari ini!',
+        'Mie Koclok mungkin hanya satu dari sedemikian banyak masakan khas kota Cirebon. Namun uniknya, Mie Koclok memiliki kemiripan tersendiri Mie Celor meskipun berbeda pulau dengan yang satu itu. Dengan segala kelebihannya ini, hidangan ini wajib kita coba dan masak sendiri di rumah, terkhusus bagi yang belum pernah mencoba sebelumnya.Walaupun masih kalah pamor dibandingkan Tahu Gejrot ataupun Nasi Jamblang, Mie Koclok memiliki cita rasa yang sangat komplit. Berbekal kaldu ayam dan santan kental yang lekoh rasanya, mie basah dimasak bersama sayuran dan tersaji bersama suwiran ayam serta telur rebus. Membayangkannya saja sungguh nikmat, apalagi saat kita menyantapnya!Tertarik dengan berbagai menu khas Cirebon lainnya? Simak resep-resep dari saya di Masak Apa Hari Ini seperti Nasi Lengko serta Empal Gentong. Yuk, kita memasak bersama hari ini!',
     ingredients: [
       '400 g mie basah',
       '100 g kol, iris lebar',
@@ -283,15 +275,14 @@ List<Recipe> recipes = [
   ),
   Recipe(
     name: 'Fried Ice Cream',
-    thumbnail:
-    'https://www.masakapahariini.com/wp-content/uploads/2021/06/fried-ice-cream-dish_edited-780x440.jpg',
+    thumbnail: 'fried-ice-cream.jpg',
     servings: '4 Porsi',
     times: '1jam',
     difficulty: 'Cukup rumit',
     author: 'Dilla',
     datePublished: 'Juni 9, 2021',
     description:
-    'Pernah terbayangkan sebelumnya untuk mencicipi fried ice cream atau es krim goreng? Atau pernahkah kamu berpikir bagaimana cara menggoreng es krim agar tidak meleleh? Nah, resep ini cocok untukmu yang kreatif dan eksploratif soal urusan dapur!Meski sudah ada sejak lama, popularitas fried ice cream rasanya tak kunjung surut. Rasanya yang lezat dan cara penyajiannya yang unik membuat dessert yang satu ini senantiasa digadang-gadang oleh mereka yang menggemari makanan manis. Fried ice cream sendiri dibuat dengan cara menggoreng es krim yang sudah terlebih dahulu dibungkus oleh roti. Hasilnya adalah sensasi rasa unik karena memadukan renyahnya roti yang digoreng dan dinginnya es krim. Tentunya, rasanya akan makin spesial karena es krim yang akan kita gunakan adalah Wall’s Strawberry Cheesecake Ice Cream dengan potongan keju dan saus stroberi yang segar!Saat membuat dessert ini, pastikan bahwa bulatan es krim yang berbalut roti tawar telah terbungkus rapat. Hal ini dapat mencegah es krim meleleh saat digoreng. Yuk, kita ke dapur!',
+        'Pernah terbayangkan sebelumnya untuk mencicipi fried ice cream atau es krim goreng? Atau pernahkah kamu berpikir bagaimana cara menggoreng es krim agar tidak meleleh? Nah, resep ini cocok untukmu yang kreatif dan eksploratif soal urusan dapur!Meski sudah ada sejak lama, popularitas fried ice cream rasanya tak kunjung surut. Rasanya yang lezat dan cara penyajiannya yang unik membuat dessert yang satu ini senantiasa digadang-gadang oleh mereka yang menggemari makanan manis. Fried ice cream sendiri dibuat dengan cara menggoreng es krim yang sudah terlebih dahulu dibungkus oleh roti. Hasilnya adalah sensasi rasa unik karena memadukan renyahnya roti yang digoreng dan dinginnya es krim. Tentunya, rasanya akan makin spesial karena es krim yang akan kita gunakan adalah Wall’s Strawberry Cheesecake Ice Cream dengan potongan keju dan saus stroberi yang segar!Saat membuat dessert ini, pastikan bahwa bulatan es krim yang berbalut roti tawar telah terbungkus rapat. Hal ini dapat mencegah es krim meleleh saat digoreng. Yuk, kita ke dapur!',
     ingredients: [
       '4 scoop Wall\'s Strawberry Cheesecake Ice Cream',
       '2 lembar roti tawar',
@@ -310,14 +301,14 @@ List<Recipe> recipes = [
   ),
   Recipe(
     name: 'Dimsum Mentai Bungkus Nori',
-    thumbnail: '',
+    thumbnail: 'dimsum-mentai-bungkus-nori.jpg',
     servings: '3 Porsi',
     times: '15mnt',
     difficulty: 'Cukup rumit',
     author: 'Valentina',
     datePublished: 'Juli 3, 2021',
     description:
-    'Pencinta dimsum mentai berbungkus nori, saatnya kamu bikin sendiri camilan kekinian ini! Membuat Dimsum Mentai Bungkus Nori ini ternyata tak sesulit yang kamu bayangkan. Bahan-bahan yang biasa digunakan untuk membuat mentai salah satunya adalah tobiko, yaitu telur ikan terbang yang sangat akrab digunakan di restoran Jepang sebagai topping atau hiasan. Tobiko kini mudah didapat di supermarket yang menjual bahan masakan impor atau toko online.Untuk membuat mentai dengan sensasi smokey seperti di restoran, kamu cukup menggunakan pilihan oven dengan api atas ataus menggunakan blow torch. Nah, untuk penggunaan blow torch sebaiknya kamu berhati-hati dan juga wajib mencoba nya terlebih dahulu sebelum digunakan untuk memberi efek ‘bakar’ pada saus mentai. Pasalnya jika jarak blow torch terlalu dekat dengan api besar, maka saus mentai akan cepat gosong atau kehitaman. Wajib latihan dulu, ya!Terakhir, hindari menggiling atau mencincang daging ayam terlalu halus. Tujuannya adalah agar tekstur dimsum lebih terasa. Yuk, siapkan bahan Dimsum Mentai Bungkus Nori!',
+        'Pencinta dimsum mentai berbungkus nori, saatnya kamu bikin sendiri camilan kekinian ini! Membuat Dimsum Mentai Bungkus Nori ini ternyata tak sesulit yang kamu bayangkan. Bahan-bahan yang biasa digunakan untuk membuat mentai salah satunya adalah tobiko, yaitu telur ikan terbang yang sangat akrab digunakan di restoran Jepang sebagai topping atau hiasan. Tobiko kini mudah didapat di supermarket yang menjual bahan masakan impor atau toko online.Untuk membuat mentai dengan sensasi smokey seperti di restoran, kamu cukup menggunakan pilihan oven dengan api atas ataus menggunakan blow torch. Nah, untuk penggunaan blow torch sebaiknya kamu berhati-hati dan juga wajib mencoba nya terlebih dahulu sebelum digunakan untuk memberi efek ‘bakar’ pada saus mentai. Pasalnya jika jarak blow torch terlalu dekat dengan api besar, maka saus mentai akan cepat gosong atau kehitaman. Wajib latihan dulu, ya!Terakhir, hindari menggiling atau mencincang daging ayam terlalu halus. Tujuannya adalah agar tekstur dimsum lebih terasa. Yuk, siapkan bahan Dimsum Mentai Bungkus Nori!',
     ingredients: [
       '12 lembar nori ukuran 7x7 cm',
       '5 sdm air, untuk perekat',
@@ -349,14 +340,14 @@ List<Recipe> recipes = [
   ),
   Recipe(
     name: 'Sup Jamur',
-    thumbnail: '',
+    thumbnail: 'sup-jamur.jpg',
     servings: '4 Porsi',
     times: '1jam',
     difficulty: 'Mudah',
     author: 'Dilla',
     datePublished: 'Juli 28, 2021',
     description:
-    'Dari sekian banyak resep sup, tentu sup jamur selalu ada di hati para penggemarnya. Warnanya yang cokelat muda, teksturnya yang tidak membosankan, serta rasanya yang memanjakan pastinya bisa memuaskan siapa saja. Terlebih di saat musim penghujan ataupun saat tengah menjalani isolasi mandiri (isoman) di rumah atau buat kamu yang sedang dalam masa pemulihan setelah sakit.Inilah sebabnya kamu perlu mengetahui resep yang super mudah berikut ini. Hanya dengan berbekal Royco Sup Krim Ayam dan tiga jenis jamur seperti champignon, enoki, dan jamur tiram; kamu sudah bisa membuat hidangan yang satu ini. Sajikan lebih untuk keluarga sesekali sebagai menu pembuka dari rangkaian makan malam yang istimewa. Untuk menu makan malamnya, cobalah juga steak saus mushroom sebagai contohnya.Mengapa menggunakan tiga jenis jamur? Resep pada umumnya biasanya menyarankan satu jenis saja karena faktor kemudahan serta harga. Misalnya penggunaan jamur champignon atau jamur kancing saja karena mudah ditemukan serta tidak mahal. Ditambahnya berbagai jenis jamur lainnya tentu melengkapi nutrisinya dan menjadikan sup lebih terasa elegan dan semakin lezat. Ini tentu belum berbicara soal teksturnya yang semakin beragam. Untuk kamu yang senang bereksplorasi, menggunakan jamur-jamur musiman tentu memberikan cita rasa tersendiri bagi sup lezat ini.Ingin tahu aneka resep sup lainnya? Selain sup krim tiga jenis jamur tadi, ada beberapa resep lain yang lain kali sangat layak untuk kamu coba. Ayo, cari tahu apa saja berikut ini!Dengan cita rasa jagung, sup yang tampil hangat ini akan membangkitkan energi dan semangat dalam menjalani aktivitas. Jadikan juga sebagai menu praktis di kala lapar melanda tengah malam.Tambahkan sentuhan menarik agar sup ini semakin lezat. Padukan sup krim jagung dengan roti tawar panggang, croissant, ataupun baguette yang dipanggang bersama minyak zaitun dan bawang putih cincang.Bagi pencinta cita rasa pedas, sajikan sup krim jagung dengan tambahan lada hitam pada proses pemasakan, bahkan kamu juga bisa menambahkan daging bila mau. Sayuran pengganti wortel pada resep ini bisa juga kamu masukkan brokoli, jamur kancing, buncis, atau kembang kol. Jadikan sup tradisional ini tidak pernah membosankan untuk dinikmati!Simak resep sup krim jagung.Ayam rebus menjadi protein utama sup menyehatkan yang satu ini. Ini dikarenakan proses masak direbus saja sudah jelas lebih sehat daripada proses masak lainnya. Kamu bisa menggunakan berbagai macam sayuran yang dipotong sesuai ukuran dan mudah untuk langsung disantap. Ada baikyna juga kamu mempersiapkan kaldu sedari awal karena akan semakin sedap rasanya. Kalau umurnya sudah beberapa hari, cukup tambahkan ayam baru atau sayuran segar agar kembali enak untuk dinikmati.Inilah resep lengkap sup ayam bening.Sup krim ayam yang kaya rasa ini mudah dikreasikan sesuai dengan berbagai ide memasak. Gunakan untuk meracik ragout sebagai isian risoles atau kroket, serta mencampurnya dengan sayuran untuk cita rasa yang lezat dan sehat. Jadikan juga sebagai saus untuk sayuran atau pasta panggang!Sekarang semakin banyak perbendaharaan resep sup di rumah. Selain sup jamur, kamu bisa menyajikan tiga jenis sup ini untuk memeriahkan hari-harimu bersama keluarga!',
+        'Dari sekian banyak resep sup, tentu sup jamur selalu ada di hati para penggemarnya. Warnanya yang cokelat muda, teksturnya yang tidak membosankan, serta rasanya yang memanjakan pastinya bisa memuaskan siapa saja. Terlebih di saat musim penghujan ataupun saat tengah menjalani isolasi mandiri (isoman) di rumah atau buat kamu yang sedang dalam masa pemulihan setelah sakit.Inilah sebabnya kamu perlu mengetahui resep yang super mudah berikut ini. Hanya dengan berbekal Royco Sup Krim Ayam dan tiga jenis jamur seperti champignon, enoki, dan jamur tiram; kamu sudah bisa membuat hidangan yang satu ini. Sajikan lebih untuk keluarga sesekali sebagai menu pembuka dari rangkaian makan malam yang istimewa. Untuk menu makan malamnya, cobalah juga steak saus mushroom sebagai contohnya.Mengapa menggunakan tiga jenis jamur? Resep pada umumnya biasanya menyarankan satu jenis saja karena faktor kemudahan serta harga. Misalnya penggunaan jamur champignon atau jamur kancing saja karena mudah ditemukan serta tidak mahal. Ditambahnya berbagai jenis jamur lainnya tentu melengkapi nutrisinya dan menjadikan sup lebih terasa elegan dan semakin lezat. Ini tentu belum berbicara soal teksturnya yang semakin beragam. Untuk kamu yang senang bereksplorasi, menggunakan jamur-jamur musiman tentu memberikan cita rasa tersendiri bagi sup lezat ini.Ingin tahu aneka resep sup lainnya? Selain sup krim tiga jenis jamur tadi, ada beberapa resep lain yang lain kali sangat layak untuk kamu coba. Ayo, cari tahu apa saja berikut ini!Dengan cita rasa jagung, sup yang tampil hangat ini akan membangkitkan energi dan semangat dalam menjalani aktivitas. Jadikan juga sebagai menu praktis di kala lapar melanda tengah malam.Tambahkan sentuhan menarik agar sup ini semakin lezat. Padukan sup krim jagung dengan roti tawar panggang, croissant, ataupun baguette yang dipanggang bersama minyak zaitun dan bawang putih cincang.Bagi pencinta cita rasa pedas, sajikan sup krim jagung dengan tambahan lada hitam pada proses pemasakan, bahkan kamu juga bisa menambahkan daging bila mau. Sayuran pengganti wortel pada resep ini bisa juga kamu masukkan brokoli, jamur kancing, buncis, atau kembang kol. Jadikan sup tradisional ini tidak pernah membosankan untuk dinikmati!Simak resep sup krim jagung.Ayam rebus menjadi protein utama sup menyehatkan yang satu ini. Ini dikarenakan proses masak direbus saja sudah jelas lebih sehat daripada proses masak lainnya. Kamu bisa menggunakan berbagai macam sayuran yang dipotong sesuai ukuran dan mudah untuk langsung disantap. Ada baikyna juga kamu mempersiapkan kaldu sedari awal karena akan semakin sedap rasanya. Kalau umurnya sudah beberapa hari, cukup tambahkan ayam baru atau sayuran segar agar kembali enak untuk dinikmati.Inilah resep lengkap sup ayam bening.Sup krim ayam yang kaya rasa ini mudah dikreasikan sesuai dengan berbagai ide memasak. Gunakan untuk meracik ragout sebagai isian risoles atau kroket, serta mencampurnya dengan sayuran untuk cita rasa yang lezat dan sehat. Jadikan juga sebagai saus untuk sayuran atau pasta panggang!Sekarang semakin banyak perbendaharaan resep sup di rumah. Selain sup jamur, kamu bisa menyajikan tiga jenis sup ini untuk memeriahkan hari-harimu bersama keluarga!',
     ingredients: [
       '150 g jamur kancing (champignon), iris tipis',
       '50 g jamur tiram',

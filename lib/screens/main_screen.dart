@@ -1,21 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:resep_makanan/models/recipe.dart';
 import 'package:resep_makanan/screens/about_screen.dart';
+import '../utils/constants.dart';
+import '../widgets/main_screen_grid_view.dart';
+import '../widgets/main_screen_list_view.dart';
 
 class MainScreen extends StatefulWidget {
+  const MainScreen({Key? key}) : super(key: key);
+
   @override
   State<MainScreen> createState() => _MainScreenState();
 }
 
 class _MainScreenState extends State<MainScreen> {
-  bool isListView = true;
+  bool isListView = false;
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Resep Makanan'),
+          leading: appBarLeadingIcon,
+          title: const Center(child: Text('Resep Makanan', style: appBarTitleTextStyle,)),
           actions: [
             PopupMenuButton<String>(
               onSelected: (option) {
@@ -30,7 +35,7 @@ class _MainScreenState extends State<MainScreen> {
                   ));
                 } else if (option == 'about') {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return AboutScreen();
+                    return const AboutScreen();
                   }));
                 }
               },
@@ -40,7 +45,7 @@ class _MainScreenState extends State<MainScreen> {
                       value: 'change_view',
                       child:
                           Text(isListView ? 'Show as Grid' : 'Show as List')),
-                  PopupMenuItem(value: 'about', child: Text('About')),
+                  const PopupMenuItem(value: 'about', child: Text('About')),
                 ];
               },
             )
@@ -50,14 +55,14 @@ class _MainScreenState extends State<MainScreen> {
           child: LayoutBuilder(
               builder: (BuildContext context, BoxConstraints constraints) {
             if (isListView) {
-              return ListViewRecipe();
+              return const ListViewRecipe();
             } else {
               int crossAxisCount;
 
               if (constraints.maxWidth < 768) {
-                crossAxisCount = 3;
+                crossAxisCount = 2;
               } else {
-                crossAxisCount = 5;
+                crossAxisCount = 4;
               }
 
               return GridViewRecipe(crossAxisCount: crossAxisCount);
@@ -65,39 +70,6 @@ class _MainScreenState extends State<MainScreen> {
           }),
         ),
       ),
-    );
-  }
-}
-
-class GridViewRecipe extends StatelessWidget {
-  int crossAxisCount;
-
-  GridViewRecipe({required this.crossAxisCount});
-
-  @override
-  Widget build(BuildContext context) {
-    return GridView.count(
-      crossAxisCount: crossAxisCount,
-      children: recipes.map((recipe) {
-        return Text('${recipe.name}');
-      }).toList(),
-    );
-  }
-}
-
-class ListViewRecipe extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return ListView.builder(
-      itemBuilder: (context, index) {
-        final Recipe recipe = recipes[index];
-
-        return InkWell(
-          onTap: () {},
-          child: Text('${recipe.name}'),
-        );
-      },
-      itemCount: recipes.length,
     );
   }
 }

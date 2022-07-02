@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:resep_makanan/main.dart';
 import 'package:resep_makanan/screens/main_screen.dart';
+import '../utils/constants.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -9,9 +9,10 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
-  void initState(){
+  void initState() {
     Future.delayed(const Duration(seconds: 3), () {
-      Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context){
+      Navigator.pushAndRemoveUntil(context,
+          MaterialPageRoute(builder: (context) {
         return MainScreen();
       }), (route) => false);
     });
