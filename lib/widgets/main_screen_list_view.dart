@@ -14,40 +14,43 @@ class ListViewRecipe extends StatelessWidget {
         itemBuilder: (context, index) {
           final Recipe recipe = recipes[index];
 
-          return InkWell(
-            onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return DetailScreen(recipe: recipe);
-              }));
-            },
-            child: Card(
-              elevation: 3,
-              child: SizedBox(
-                height:
-                    MediaQuery.of(context).orientation == Orientation.portrait
-                        ? constraints.maxHeight * 0.1
-                        : constraints.maxHeight * 0.4,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Expanded(
-                        flex: 2,
-                        child: Image.asset(
-                          'images/${recipe.thumbnail}',
-                          fit: BoxFit.cover,
-                        )),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Expanded(
-                        flex: 3,
-                        child: Text(
-                          recipe.name,
-                          textAlign: TextAlign.left,
-                          style: boldTextStyle,
-                        ))
-                  ],
+          return Container(
+            margin: const EdgeInsets.symmetric(vertical: 3),
+            child: InkWell(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return DetailScreen(recipe: recipe);
+                }));
+              },
+              child: Card(
+                elevation: 3,
+                child: SizedBox(
+                  height:
+                      MediaQuery.of(context).orientation == Orientation.portrait
+                          ? constraints.maxHeight * 0.1
+                          : constraints.maxHeight * 0.4,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Expanded(
+                          flex: 2,
+                          child: Image.asset(
+                            'images/${recipe.thumbnail}',
+                            fit: BoxFit.cover,
+                          )),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      Expanded(
+                          flex: 3,
+                          child: Text(
+                            recipe.name,
+                            textAlign: TextAlign.left,
+                            style: boldTextStyle,
+                          ))
+                    ],
+                  ),
                 ),
               ),
             ),

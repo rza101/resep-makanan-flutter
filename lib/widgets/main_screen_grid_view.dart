@@ -4,9 +4,9 @@ import 'package:resep_makanan/screens/detail_screen.dart';
 import 'package:resep_makanan/utils/constants.dart';
 
 class GridViewRecipe extends StatelessWidget {
-  int crossAxisCount;
+  final int crossAxisCount;
 
-  GridViewRecipe({required this.crossAxisCount});
+  const GridViewRecipe({Key? key, required this.crossAxisCount}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

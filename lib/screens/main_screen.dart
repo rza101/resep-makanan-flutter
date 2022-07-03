@@ -19,8 +19,9 @@ class _MainScreenState extends State<MainScreen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          centerTitle: true,
           leading: appBarLeadingIcon,
-          title: const Center(child: Text('Resep Makanan', style: appBarTitleTextStyle,)),
+          title: const Text('Resep Makanan', style: appBarTitleTextStyle),
           actions: [
             PopupMenuButton<String>(
               onSelected: (option) {
@@ -51,23 +52,26 @@ class _MainScreenState extends State<MainScreen> {
             )
           ],
         ),
-        body: Center(
-          child: LayoutBuilder(
-              builder: (BuildContext context, BoxConstraints constraints) {
-            if (isListView) {
-              return const ListViewRecipe();
-            } else {
-              int crossAxisCount;
-
-              if (constraints.maxWidth < 768) {
-                crossAxisCount = 2;
+        body: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 7.5),
+          child: Center(
+            child: LayoutBuilder(
+                builder: (BuildContext context, BoxConstraints constraints) {
+              if (isListView) {
+                return const ListViewRecipe();
               } else {
-                crossAxisCount = 4;
-              }
+                int crossAxisCount;
 
-              return GridViewRecipe(crossAxisCount: crossAxisCount);
-            }
-          }),
+                if (constraints.maxWidth < deviceBreakpoint) {
+                  crossAxisCount = 2;
+                } else {
+                  crossAxisCount = 4;
+                }
+
+                return GridViewRecipe(crossAxisCount: crossAxisCount);
+              }
+            }),
+          ),
         ),
       ),
     );
