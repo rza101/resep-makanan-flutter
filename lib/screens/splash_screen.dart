@@ -10,8 +10,8 @@ class SplashScreen extends StatelessWidget {
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushAndRemoveUntil(context,
           MaterialPageRoute(builder: (context) {
-            return const MainScreen();
-          }), (route) => false);
+        return const MainScreen();
+      }), (route) => false);
     });
 
     return Scaffold(
@@ -19,9 +19,13 @@ class SplashScreen extends StatelessWidget {
         builder: (BuildContext context, BoxConstraints constraints) {
           return Center(
             child: SizedBox(
-                height: constraints.maxHeight * 0.5,
-                width: constraints.maxWidth * 0.5,
-                child: Image.asset('images/logo_text.png', color: color1)),
+              height: constraints.maxHeight * 0.5,
+              width: constraints.maxWidth * 0.5,
+              child: Image.asset(
+                'images/logo_text.png',
+                color: color1,
+              ),
+            ),
           );
         },
       )),

@@ -9,7 +9,10 @@ class AboutScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('About', style: appBarTitleTextStyle),
+        title: const Text(
+          'About',
+          style: appBarTitleTextStyle,
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(10),
@@ -23,9 +26,12 @@ class AboutScreen extends StatelessWidget {
                     (BuildContext context, BoxConstraints constraints) {
                   return ConstrainedBox(
                     constraints: BoxConstraints(
-                        maxHeight: constraints.maxHeight * 0.5,
-                        maxWidth: constraints.maxWidth * 0.5),
-                    child: Image.asset('images/me.jpg'),
+                      maxHeight: constraints.maxHeight * 0.5,
+                      maxWidth: constraints.maxWidth * 0.5,
+                    ),
+                    child: Image.asset(
+                      'images/me.jpg',
+                    ),
                   );
                 }),
               ),
@@ -35,17 +41,26 @@ class AboutScreen extends StatelessWidget {
                     Text(
                       'Rheza Rijaya',
                       textAlign: TextAlign.center,
-                      style: boldTextStyle.copyWith(fontSize: 27.5),
+                      style: boldTextStyle.copyWith(
+                        fontSize: 27.5,
+                      ),
                     ),
                     Container(
-                        margin: const EdgeInsets.symmetric(vertical: 5),
-                        child: const Text(
-                          '"Keep Calm And Try Harder"',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 17.5),
-                        )),
+                      margin: const EdgeInsets.symmetric(
+                        vertical: 5,
+                      ),
+                      child: const Text(
+                        '"Keep Calm And Try Harder"',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 17.5,
+                        ),
+                      ),
+                    ),
                     Container(
-                      margin: const EdgeInsets.symmetric(vertical: 5),
+                      margin: const EdgeInsets.symmetric(
+                        vertical: 5,
+                      ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
@@ -56,7 +71,9 @@ class AboutScreen extends StatelessWidget {
                                 width: 30,
                                 height: 30,
                               ),
-                              const Text('rza101')
+                              const Text(
+                                'rza101',
+                              ),
                             ],
                           ),
                           Column(
@@ -66,7 +83,9 @@ class AboutScreen extends StatelessWidget {
                                 width: 30,
                                 height: 30,
                               ),
-                              const Text('@r.za.101')
+                              const Text(
+                                '@r.za.101',
+                              ),
                             ],
                           ),
                         ],

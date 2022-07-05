@@ -13,21 +13,23 @@ class DetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          title: const Text(
-            'Detail',
-            style: appBarTitleTextStyle,
-          ),
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text(
+          'Detail',
+          style: appBarTitleTextStyle,
         ),
-        body: LayoutBuilder(
-          builder: (BuildContext context, BoxConstraints constraints) {
-            if(constraints.maxWidth < deviceBreakpoint || MediaQuery.of(context).orientation == Orientation.portrait){
-              return DetailScreenMobile(recipe: recipe);
-            }else{
-              return DetailScreenWeb(recipe: recipe);
-            }
-          },
-        ));
+      ),
+      body: LayoutBuilder(
+        builder: (BuildContext context, BoxConstraints constraints) {
+          if (constraints.maxWidth < deviceBreakpoint ||
+              MediaQuery.of(context).orientation == Orientation.portrait) {
+            return DetailScreenMobile(recipe: recipe);
+          } else {
+            return DetailScreenWeb(recipe: recipe);
+          }
+        },
+      ),
+    );
   }
 }

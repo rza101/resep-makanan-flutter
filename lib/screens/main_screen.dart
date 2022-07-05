@@ -21,7 +21,10 @@ class _MainScreenState extends State<MainScreen> {
         appBar: AppBar(
           centerTitle: true,
           leading: appBarLeadingIcon,
-          title: const Text('Resep Makanan', style: appBarTitleTextStyle),
+          title: const Text(
+            'Resep Makanan',
+            style: appBarTitleTextStyle,
+          ),
           actions: [
             PopupMenuButton<String>(
               onSelected: (option) {
@@ -30,30 +33,45 @@ class _MainScreenState extends State<MainScreen> {
                     isListView = !isListView;
                   });
 
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                    content: Text(
-                        isListView ? 'Showing as List' : 'Showing as Grid'),
-                  ));
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(
+                        isListView ? 'Showing as List' : 'Showing as Grid',
+                      ),
+                    ),
+                  );
                 } else if (option == 'about') {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return const AboutScreen();
-                  }));
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return const AboutScreen();
+                    }),
+                  );
                 }
               },
               itemBuilder: (BuildContext context) {
                 return [
                   PopupMenuItem(
-                      value: 'change_view',
-                      child:
-                          Text(isListView ? 'Show as Grid' : 'Show as List')),
-                  const PopupMenuItem(value: 'about', child: Text('About')),
+                    value: 'change_view',
+                    child: Text(
+                      isListView ? 'Show as Grid' : 'Show as List',
+                    ),
+                  ),
+                  const PopupMenuItem(
+                    value: 'about',
+                    child: Text(
+                      'About',
+                    ),
+                  ),
                 ];
               },
-            )
+            ),
           ],
         ),
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 7.5),
+          padding: const EdgeInsets.symmetric(
+            horizontal: 7.5,
+          ),
           child: Center(
             child: LayoutBuilder(
                 builder: (BuildContext context, BoxConstraints constraints) {
@@ -68,7 +86,9 @@ class _MainScreenState extends State<MainScreen> {
                   crossAxisCount = 4;
                 }
 
-                return GridViewRecipe(crossAxisCount: crossAxisCount);
+                return GridViewRecipe(
+                  crossAxisCount: crossAxisCount,
+                );
               }
             }),
           ),

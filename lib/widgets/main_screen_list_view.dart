@@ -15,12 +15,17 @@ class ListViewRecipe extends StatelessWidget {
           final Recipe recipe = recipes[index];
 
           return Container(
-            margin: const EdgeInsets.symmetric(vertical: 3),
+            margin: const EdgeInsets.symmetric(
+              vertical: 3,
+            ),
             child: InkWell(
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return DetailScreen(recipe: recipe);
-                }));
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) {
+                    return DetailScreen(recipe: recipe);
+                  }),
+                );
               },
               child: Card(
                 elevation: 3,
@@ -34,21 +39,23 @@ class ListViewRecipe extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Expanded(
-                          flex: 2,
-                          child: Image.asset(
-                            'images/${recipe.thumbnail}',
-                            fit: BoxFit.cover,
-                          )),
+                        flex: 2,
+                        child: Image.asset(
+                          'images/${recipe.thumbnail}',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
                       const SizedBox(
                         width: 10,
                       ),
                       Expanded(
-                          flex: 3,
-                          child: Text(
-                            recipe.name,
-                            textAlign: TextAlign.left,
-                            style: boldTextStyle,
-                          ))
+                        flex: 3,
+                        child: Text(
+                          recipe.name,
+                          textAlign: TextAlign.left,
+                          style: boldTextStyle,
+                        ),
+                      ),
                     ],
                   ),
                 ),
